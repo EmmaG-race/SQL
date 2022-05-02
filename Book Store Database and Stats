@@ -1,0 +1,46 @@
+/** Book Store: 
+**/
+
+CREATE TABLE customers (id INTEGER PRIMARY KEY, name TEXT, genre TEXT, age INTEGER, location TEXT, books_purchased INTEGER, average_bookprice INTEGER);
+
+INSERT INTO customers VALUES (1, "Joey", "Adventure", 18, "Florida", 4, 12 );
+
+INSERT INTO customers VALUES (2, "James", "Horror", 30, "Gerorgia", 7, 14 );
+
+INSERT INTO customers VALUES (3, "Betty", "Romance", 21, "Texas", 15, 25 );
+
+INSERT INTO customers VALUES (4, "Ivy", "Romance", 23, "Texas", 32, 25);
+
+INSERT INTO customers VALUES (5, "Willow", "Self Help", 27, "North Carolina", 27, 30); 
+
+INSERT INTO customers VALUES (6, "Taylor", "Romance", 31, "Tennessee", 199, 25);
+
+INSERT INTO customers VALUES (7, "Diana", "Horror", 32, "New York", 40, 30); 
+
+INSERT INTO customers VALUES (8, "Karlie", "Self Help", 30, "New York", 3, 50);
+
+INSERT INTO customers VALUES (9, "Zoey", "Drama", 34, "California", 15, 21);
+
+INSERT INTO customers VALUES (10, "Emily", "Romantic Comedy", 32, "Tennessee", 45, 20);
+
+INSERT INTO customers VALUES (11, "Jack", "Sci-Fi", 38, "New York", 111, 14);
+
+INSERT INTO customers VALUES (12, "Cara", "Sci-Fi", 29, "California", 7, 70);
+
+INSERT INTO customers VALUES (13, "Sappho", "Romance", 97, "Massachusetts", 550, 10);
+
+INSERT INTO customers VALUES (14, "Lindsay", "Drama", 34, "Pennsylvania", 76, 15); 
+
+INSERT INTO customers VALUES (15, "Dakota", "Drama", 34, "California", 23, 21);
+
+SELECT * FROM Customers;
+
+SELECT name, age, genre FROM customers;
+
+SELECT * FROM customers WHERE age >21;
+
+SELECT name, age, genre FROM customers WHERE genre = "Drama";
+
+SELECT name, genre, books_purchased FROM customers WHERE genre = "Romance";
+
+SELECT * FROM customers WHERE books_purchased >=50;
