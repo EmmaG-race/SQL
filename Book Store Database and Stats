@@ -31,7 +31,7 @@ INSERT INTO customers VALUES (13, "Sappho", "Romance", 97, "Massachusetts", 550,
 
 INSERT INTO customers VALUES (14, "Lindsay", "Drama", 34, "Pennsylvania", 76, 15); 
 
-INSERT INTO customers VALUES (15, "Dakota", "Drama", 34, "California", 23, 21);
+INSERT INTO customers VALUES (15, "Joey", "Drama", 34, "California", 23, 21);
 
 SELECT * FROM Customers;
 
